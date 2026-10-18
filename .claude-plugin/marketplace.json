@@ -1,0 +1,17 @@
+{
+  "name": "tiziano-ai",
+  "description": "Tiziano AI plugins for native agent clients.",
+  "owner": {
+    "name": "Tiziano AI"
+  },
+  "plugins": [
+    {
+      "name": "t3-workers",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/t3-workers"
+      },
+      "description": "Orchestrate visible T3 workers from a native Codex or Claude Code chief."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "tiziano-ai",
+  "interface": {
+    "displayName": "Tiziano AI"
+  },
+  "plugins": [
+    {
+      "name": "t3-workers",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Tiziano-AI/t3-workers.git"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
