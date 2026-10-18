@@ -50,6 +50,18 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(entry["policy"]["authentication"], ("ON_INSTALL", "ON_USE"))
                 self.assertTrue(entry["category"])
 
+    def test_codex_remote_entries_provide_native_preview_metadata(self):
+        for entry in self.codex["plugins"]:
+            if entry["source"]["source"] != "url":
+                continue
+            with self.subTest(plugin=entry["name"]):
+                preview = entry["interface"]
+                for key in ("displayName", "shortDescription", "developerName"):
+                    self.assertTrue(preview[key].strip())
+                website = urlsplit(preview["websiteUrl"])
+                self.assertEqual(website.scheme, "https")
+                self.assertTrue(website.netloc)
+
 
 if __name__ == "__main__":
     unittest.main()

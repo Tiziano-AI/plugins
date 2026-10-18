@@ -6,6 +6,12 @@
   "plugins": [
     {
       "name": "t3-workers",
+      "interface": {
+        "displayName": "T3 Workers",
+        "shortDescription": "Orchestrate your T3 fleet",
+        "developerName": "Tiziano AI",
+        "websiteUrl": "https://github.com/Tiziano-AI/t3-workers"
+      },
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/t3-workers.git"
