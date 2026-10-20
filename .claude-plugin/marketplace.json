@@ -12,6 +12,15 @@
         "repo": "Tiziano-AI/t3-workers"
       },
       "description": "Orchestrate visible T3 workers from a native Codex or Claude Code chief."
+    },
+    {
+      "name": "cloudflare-publish",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/cloudflare-publish-plugin",
+        "sha": "98ffce682aa9e3cf6061a9c6efe0ef3be790569b"
+      },
+      "description": "Publish local HTTP or pinned SSH services from your Mac through your own Cloudflare Tunnel and Access."
     }
   ]
 }

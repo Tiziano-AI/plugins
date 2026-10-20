@@ -50,6 +50,18 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(entry["policy"]["authentication"], ("ON_INSTALL", "ON_USE"))
                 self.assertTrue(entry["category"])
 
+    def test_cloudflare_publish_uses_one_immutable_public_snapshot(self):
+        codex = {entry["name"]: entry for entry in self.codex["plugins"]}
+        claude = {entry["name"]: entry for entry in self.claude["plugins"]}
+        left = codex["cloudflare-publish"]
+        right = claude["cloudflare-publish"]
+        self.assertEqual(right["source"]["repo"], "Tiziano-AI/cloudflare-publish-plugin")
+        self.assertEqual(left["source"]["sha"], right["source"]["sha"])
+        self.assertRegex(left["source"]["sha"], r"\A[0-9a-f]{40}\Z")
+        self.assertNotIn("ref", left["source"])
+        self.assertNotIn("ref", right["source"])
+        self.assertEqual(left["policy"]["authentication"], "ON_USE")
+
     def test_codex_remote_entries_provide_native_preview_metadata(self):
         for entry in self.codex["plugins"]:
             if entry["source"]["source"] != "url":
