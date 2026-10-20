@@ -28,12 +28,12 @@
         "displayName": "Cloudflare Publish",
         "shortDescription": "Share local Mac services",
         "developerName": "Tiziano AI",
-        "websiteUrl": "https://github.com/Tiziano-AI/cloudflare-publish-plugin"
+        "websiteUrl": "https://github.com/Tiziano-AI/cloudflare-publish"
       },
       "source": {
         "source": "url",
-        "url": "https://github.com/Tiziano-AI/cloudflare-publish-plugin.git",
-        "sha": "98ffce682aa9e3cf6061a9c6efe0ef3be790569b"
+        "url": "https://github.com/Tiziano-AI/cloudflare-publish.git",
+        "sha": "065ef1516b1925ac8dcb750553bcc75b88cb00d1"
       },
       "policy": {
         "installation": "AVAILABLE",

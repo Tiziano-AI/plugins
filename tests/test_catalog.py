@@ -50,12 +50,12 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(entry["policy"]["authentication"], ("ON_INSTALL", "ON_USE"))
                 self.assertTrue(entry["category"])
 
-    def test_cloudflare_publish_uses_one_immutable_public_snapshot(self):
+    def test_cloudflare_publish_pins_one_canonical_public_source_commit(self):
         codex = {entry["name"]: entry for entry in self.codex["plugins"]}
         claude = {entry["name"]: entry for entry in self.claude["plugins"]}
         left = codex["cloudflare-publish"]
         right = claude["cloudflare-publish"]
-        self.assertEqual(right["source"]["repo"], "Tiziano-AI/cloudflare-publish-plugin")
+        self.assertEqual(right["source"]["repo"], "Tiziano-AI/cloudflare-publish")
         self.assertEqual(left["source"]["sha"], right["source"]["sha"])
         self.assertRegex(left["source"]["sha"], r"\A[0-9a-f]{40}\Z")
         self.assertNotIn("ref", left["source"])
