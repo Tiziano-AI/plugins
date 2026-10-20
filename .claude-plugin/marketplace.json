@@ -21,6 +21,60 @@
         "sha": "065ef1516b1925ac8dcb750553bcc75b88cb00d1"
       },
       "description": "Publish local HTTP or pinned SSH services from your Mac through your own Cloudflare Tunnel and Access."
+    },
+    {
+      "name": "charter-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Tiziano-AI/charter-skills.git",
+        "path": "plugins/charter-skills",
+        "sha": "0b133a7884841085ede442c201e852ec5c30fd78"
+      },
+      "description": "An opinionated, Mac-first specialist library for useful work with agents."
+    },
+    {
+      "name": "grokpair",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Tiziano-AI/grokpair.git",
+        "path": "plugin",
+        "sha": "fed5d8beda9a3fd7bb26947c4962c75443377f6f"
+      },
+      "description": "Delegate bounded work to a detached Grok Build collaborator, keep working in parallel, then inspect its reply and files."
+    },
+    {
+      "name": "voices",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/voices",
+        "sha": "cf6de9f1e428271f5a8b58b6e64e8463420630dc"
+      },
+      "description": "Create reusable voices, audition speech and keep exact performances on your Apple Silicon Mac with your own local Voices CLI and models."
+    },
+    {
+      "name": "deck-studio",
+      "displayName": "Deck Studio",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/deck-studio",
+        "sha": "2280a1824bbe37a1d57621f752bbb78121f6c7b1"
+      },
+      "description": "Create and revise local HTML decks and screenshot PDFs with 56 visual systems and rendered inspection. Requires local execution, Node.js 20+, npm, Python 3.9+ and explicit package-local Chromium setup. PDF pages are images, not editable or searchable text. Installation publishes nothing; optional self-hosting uses your own library and gateway.",
+      "author": {
+        "name": "Tiziano AI",
+        "url": "https://github.com/Tiziano-AI"
+      },
+      "homepage": "https://github.com/Tiziano-AI/deck-studio",
+      "repository": "https://github.com/Tiziano-AI/deck-studio",
+      "license": "MIT",
+      "keywords": [
+        "decks",
+        "presentations",
+        "communication",
+        "html",
+        "pdf"
+      ],
+      "category": "Productivity"
     }
   ]
 }

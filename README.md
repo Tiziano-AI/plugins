@@ -10,6 +10,10 @@ in its own repository with its own version and release lifecycle.
 | --- | --- | --- |
 | [T3 Workers](https://github.com/Tiziano-AI/t3-workers) | Codex, Claude Code | Orchestrate persistent, visible T3 workers across providers and accounts from your native chief. |
 | [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Codex, Claude Code | Give local Mac HTTP(S) or pinned machine-only SSH services stable hostnames through your own Cloudflare account. Requires a separately installed CLI, cloudflared and your own DNS zone; installs no infrastructure automatically. |
+| [Charter Skills](https://github.com/Tiziano-AI/charter-skills) | Codex, Claude Code | Mac-first specialist methods for product decisions, design, engineering, research and creative production. Adds on-demand expertise, not standing instructions or a deployment engine. |
+| [Grokpair](https://github.com/Tiziano-AI/grokpair) | Codex, Claude Code | Delegate bounded work to a detached Grok Build collaborator, then inspect its replies and files. Requires Grok Build and its own authentication; installing the plugin starts no collaborator. |
+| [Voices](https://github.com/Tiziano-AI/voices) | Codex, Claude Code | Create reusable voices and exact speech performances on your Apple Silicon Mac. Guidance requires your separately installed local Voices CLI and models; installing it starts no service. |
+| [Deck Studio](https://github.com/Tiziano-AI/deck-studio) | Codex, Claude Code | Create and revise local HTML decks and screenshot PDFs. Requires local Node.js, npm, Python and explicit package-local Chromium setup; installation publishes nothing. |
 
 Only explicitly listed plugins are distributed here. A project's existence in
 the Tiziano AI organization does not make it part of this catalog.
@@ -49,6 +53,12 @@ for the separate macOS CLI and Cloudflare prerequisites. Installing its
 guidance creates no tunnel, credentials, DNS, Access policy or background job;
 removing it does not stop existing publications.
 
+For another plugin, substitute its catalog name in the same command:
+`charter-skills@tiziano-ai`, `grokpair@tiziano-ai`, `voices@tiziano-ai` or
+`deck-studio@tiziano-ai`. Follow the selected repository's setup guide for
+its prerequisites and first use. Catalog installation does not install a
+separate application, CLI, model or service, or grant provider access.
+
 ## Update or remove
 
 Refresh the catalog and update the selected plugin through the native client:
@@ -80,14 +90,16 @@ revoke separately configured connections; each plugin's guide owns that boundary
 
 The two small native manifests reference plugin repositories directly:
 
-- `.agents/plugins/marketplace.json` uses Codex Git URL sources.
-- `.claude-plugin/marketplace.json` uses Claude GitHub sources.
+- `.agents/plugins/marketplace.json` uses Codex Git URL and Git-subdirectory sources.
+- `.claude-plugin/marketplace.json` uses Claude GitHub and Git-subdirectory sources.
 
 There are no copied plugins, build step, daemon or bundled credentials. Add an
 entry only for supported hosts and keep version details with the plugin.
-Cloudflare Publish has one public development and distribution repository.
-Both native catalogs pin the same reviewed source commit; promoting a
-replacement changes that pin explicitly.
+Pinned entries select the same reviewed source commit in both hosts;
+promoting a replacement changes that pin explicitly. Charter Skills and
+Grokpair select their plugin subdirectories through native `git-subdir`
+sources. The other entries select repository roots. The catalog copies
+neither implementation nor skill content.
 
 ```sh
 python3 -m unittest discover -s tests -v

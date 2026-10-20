@@ -34,13 +34,29 @@ class CatalogTests(unittest.TestCase):
             with self.subTest(plugin=name):
                 left = codex[name]["source"]
                 right = claude[name]["source"]
-                self.assertEqual(left["source"], "url")
-                self.assertEqual(right["source"], "github")
                 parsed = urlsplit(left["url"])
                 self.assertEqual(parsed.scheme, "https")
                 self.assertEqual(parsed.netloc, "github.com")
                 self.assertFalse(parsed.query or parsed.fragment)
-                self.assertEqual(parsed.path.removesuffix(".git").strip("/"), right["repo"])
+                if left["source"] == "git-subdir":
+                    self.assertEqual(right["source"], "git-subdir")
+                    self.assertEqual(left["url"], right["url"])
+                    left_path = left["path"].removeprefix("./")
+                    right_path = right["path"].removeprefix("./")
+                    self.assertEqual(left_path, right_path)
+                    self.assertTrue(left_path)
+                    self.assertFalse(left_path.startswith("/"))
+                    self.assertNotIn("..", left_path.split("/"))
+                    self.assertIn("sha", left)
+                else:
+                    self.assertEqual(left["source"], "url")
+                    self.assertEqual(right["source"], "github")
+                    self.assertEqual(parsed.path.removesuffix(".git").strip("/"), right["repo"])
+                if "sha" in left or "sha" in right:
+                    self.assertEqual(left["sha"], right["sha"])
+                    self.assertRegex(left["sha"], r"\A[0-9a-f]{40}\Z")
+                    self.assertNotIn("ref", left)
+                    self.assertNotIn("ref", right)
 
     def test_codex_entries_have_explicit_install_policy(self):
         for entry in self.codex["plugins"]:
@@ -64,7 +80,7 @@ class CatalogTests(unittest.TestCase):
 
     def test_codex_remote_entries_provide_native_preview_metadata(self):
         for entry in self.codex["plugins"]:
-            if entry["source"]["source"] != "url":
+            if entry["source"]["source"] not in ("url", "git-subdir"):
                 continue
             with self.subTest(plugin=entry["name"]):
                 preview = entry["interface"]

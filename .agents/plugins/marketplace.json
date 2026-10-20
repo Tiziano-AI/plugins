@@ -40,6 +40,93 @@
         "authentication": "ON_USE"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "charter-skills",
+      "interface": {
+        "displayName": "Charter Skills",
+        "shortDescription": "Specialist methods for useful work",
+        "developerName": "Tiziano AI",
+        "websiteUrl": "https://github.com/Tiziano-AI/charter-skills"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Tiziano-AI/charter-skills.git",
+        "path": "./plugins/charter-skills",
+        "sha": "0b133a7884841085ede442c201e852ec5c30fd78"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "grokpair",
+      "interface": {
+        "displayName": "grokpair",
+        "shortDescription": "Grok as a detached collaborator while you work.",
+        "developerName": "Tiziano AI",
+        "websiteUrl": "https://github.com/Tiziano-AI/grokpair"
+      },
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Tiziano-AI/grokpair.git",
+        "path": "./plugin",
+        "sha": "fed5d8beda9a3fd7bb26947c4962c75443377f6f"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "voices",
+      "interface": {
+        "displayName": "Voices",
+        "shortDescription": "Your on-device voice studio",
+        "developerName": "Tiziano AI",
+        "websiteUrl": "https://github.com/Tiziano-AI/voices"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Tiziano-AI/voices.git",
+        "sha": "cf6de9f1e428271f5a8b58b6e64e8463420630dc"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "deck-studio",
+      "description": "Create and revise audience-ready local HTML decks and screenshot PDFs.",
+      "author": {
+        "name": "Tiziano AI",
+        "url": "https://github.com/Tiziano-AI"
+      },
+      "homepage": "https://github.com/Tiziano-AI/deck-studio",
+      "repository": "https://github.com/Tiziano-AI/deck-studio",
+      "license": "MIT",
+      "interface": {
+        "displayName": "Deck Studio",
+        "shortDescription": "Create and refine communication decks",
+        "longDescription": "Turn notes, approved content or an existing deck into local HTML and PDF, with 56 visual systems and rendered inspection. Requires local execution, Node.js 20+, npm, Python 3.9+ and explicit package-local Chromium setup. PDF pages are slide images, not editable or searchable text. Optional self-hosting uses your own library and gateway; installation publishes nothing.",
+        "developerName": "Tiziano AI",
+        "websiteUrl": "https://github.com/Tiziano-AI/deck-studio"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Tiziano-AI/deck-studio.git",
+        "sha": "2280a1824bbe37a1d57621f752bbb78121f6c7b1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
     }
   ]
 }
