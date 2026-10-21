@@ -1,55 +1,19 @@
 {
   "name": "tiziano-ai",
-  "description": "Tiziano AI plugins for native agent clients.",
+  "description": "Specialist skills and tools for Codex and Claude Code.",
   "owner": {
     "name": "Tiziano AI"
   },
   "plugins": [
-    {
-      "name": "t3-workers",
-      "source": {
-        "source": "github",
-        "repo": "Tiziano-AI/t3-workers"
-      },
-      "description": "Orchestrate visible T3 workers from a native Codex or Claude Code chief."
-    },
-    {
-      "name": "cloudflare-publish",
-      "source": {
-        "source": "github",
-        "repo": "Tiziano-AI/cloudflare-publish",
-        "sha": "065ef1516b1925ac8dcb750553bcc75b88cb00d1"
-      },
-      "description": "Publish local HTTP or pinned SSH services from your Mac through your own Cloudflare Tunnel and Access."
-    },
     {
       "name": "charter-skills",
       "source": {
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/charter-skills.git",
         "path": "plugins/charter-skills",
-        "sha": "0b133a7884841085ede442c201e852ec5c30fd78"
+        "sha": "b953ac5039919895233a9f98db4d8532fbbe818b"
       },
-      "description": "An opinionated, Mac-first specialist library for useful work with agents."
-    },
-    {
-      "name": "grokpair",
-      "source": {
-        "source": "git-subdir",
-        "url": "https://github.com/Tiziano-AI/grokpair.git",
-        "path": "plugin",
-        "sha": "fed5d8beda9a3fd7bb26947c4962c75443377f6f"
-      },
-      "description": "Delegate bounded work to a detached Grok Build collaborator, keep working in parallel, then inspect its reply and files."
-    },
-    {
-      "name": "voices",
-      "source": {
-        "source": "github",
-        "repo": "Tiziano-AI/voices",
-        "sha": "cf6de9f1e428271f5a8b58b6e64e8463420630dc"
-      },
-      "description": "Create reusable voices, audition speech and keep exact performances on your Apple Silicon Mac with your own local Voices CLI and models."
+      "description": "Specialist methods for product, design, engineering, research and creative work. An opinionated, Mac-first skill library."
     },
     {
       "name": "deck-studio",
@@ -57,9 +21,9 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/deck-studio",
-        "sha": "2280a1824bbe37a1d57621f752bbb78121f6c7b1"
+        "sha": "db073d337a7e9cefe2e2073cff3bd77b65e46384"
       },
-      "description": "Create and revise local HTML decks and screenshot PDFs with 56 visual systems and rendered inspection. Requires local execution, Node.js 20+, npm, Python 3.9+ and explicit package-local Chromium setup. PDF pages are images, not editable or searchable text. Installation publishes nothing; optional self-hosting uses your own library and gateway.",
+      "description": "Shape a story and build local HTML decks and screenshot PDFs with narrative guidance and 56 visual systems.",
       "author": {
         "name": "Tiziano AI",
         "url": "https://github.com/Tiziano-AI"
@@ -75,6 +39,42 @@
         "pdf"
       ],
       "category": "Productivity"
+    },
+    {
+      "name": "voices",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/voices",
+        "sha": "49f5760d58d108c0f2c69e5e2c8c35fce71a0871"
+      },
+      "description": "Create reusable voices, audition speech and export the performance you selected on your Apple Silicon Mac. Requires your own local Voices CLI and models."
+    },
+    {
+      "name": "grokpair",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Tiziano-AI/grokpair.git",
+        "path": "plugin",
+        "sha": "4d8634b7a39f2d901231699f3795d853f15745f7"
+      },
+      "description": "Delegate bounded work to a detached Grok Build collaborator while your agent keeps working, then review its replies and files."
+    },
+    {
+      "name": "cloudflare-publish",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/cloudflare-publish",
+        "sha": "bda9c0b9aeed74fe524609038bc415b6ca8817fe"
+      },
+      "description": "Give local HTTP(S) or pinned SSH services stable, protected hostnames through your own Cloudflare Tunnel and Access."
+    },
+    {
+      "name": "t3-workers",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/t3-workers"
+      },
+      "description": "Delegate tasks to visible T3 workers from Codex or Claude Code. Alpha."
     }
   ]
 }

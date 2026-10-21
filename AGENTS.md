@@ -26,10 +26,10 @@ grant access or launch agents as a catalog test.
 
 ## Publication
 
-Preserve concurrent changes and stage exact owned files. The current commission
-authorizes creating and initially publishing `Tiziano-AI/plugins`, with T3 Workers
-as its only entry. Further public pushes and additional plugin listings need
-the user's authorization. No other remote or collaborator is authorized.
+Preserve concurrent changes and stage exact owned files. The public repository
+is `Tiziano-AI/plugins`. Public pushes and additional plugin listings require
+the user's authority for that change; an earlier release is not standing
+authority for the next one. No other remote or collaborator is authorized.
 
 Use English for source, documentation and commit messages. Keep private account
 identities, local workstation paths, credentials and runtime captures out of

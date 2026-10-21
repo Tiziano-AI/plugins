@@ -1,116 +1,129 @@
+<img src="assets/tiziano-ai.png" width="72" height="72" alt="">
+
 # Tiziano AI plugins
 
-One **`tiziano-ai`** marketplace for native Codex and Claude Code clients.
-Add the catalog once, then choose the plugins you want. Each plugin remains
-in its own repository with its own version and release lifecycle.
+Specialist skills and tools for **Codex and Claude Code**. Add the
+**`tiziano-ai`** marketplace once, then install only what you need.
 
-## Available plugins
+## Choose a plugin
 
-| Plugin | Hosts | Purpose |
+| Plugin | What you can do | Before you use it |
 | --- | --- | --- |
-| [T3 Workers](https://github.com/Tiziano-AI/t3-workers) | Codex, Claude Code | Orchestrate persistent, visible T3 workers across providers and accounts from your native chief. |
-| [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Codex, Claude Code | Give local Mac HTTP(S) or pinned machine-only SSH services stable hostnames through your own Cloudflare account. Requires a separately installed CLI, cloudflared and your own DNS zone; installs no infrastructure automatically. |
-| [Charter Skills](https://github.com/Tiziano-AI/charter-skills) | Codex, Claude Code | Mac-first specialist methods for product decisions, design, engineering, research and creative production. Adds on-demand expertise, not standing instructions or a deployment engine. |
-| [Grokpair](https://github.com/Tiziano-AI/grokpair) | Codex, Claude Code | Delegate bounded work to a detached Grok Build collaborator, then inspect its replies and files. Requires Grok Build and its own authentication; installing the plugin starts no collaborator. |
-| [Voices](https://github.com/Tiziano-AI/voices) | Codex, Claude Code | Create reusable voices and exact speech performances on your Apple Silicon Mac. Guidance requires your separately installed local Voices CLI and models; installing it starts no service. |
-| [Deck Studio](https://github.com/Tiziano-AI/deck-studio) | Codex, Claude Code | Create and revise local HTML decks and screenshot PDFs. Requires local Node.js, npm, Python and explicit package-local Chromium setup; installation publishes nothing. |
+| [Charter Skills](https://github.com/Tiziano-AI/charter-skills) | Apply specialist methods to product decisions, design, engineering, research and creative work. | Mac-first skill library; tools depend on the task. |
+| [Deck Studio](https://github.com/Tiziano-AI/deck-studio) | Shape a story and build local HTML decks and screenshot PDFs. | Local Node.js, npm, Python and package-local Chromium setup. |
+| [Voices](https://github.com/Tiziano-AI/voices) | Create reusable voices, audition speech and export the performance you selected. | Apple Silicon Mac, separate Voices CLI and local models. |
+| [Grokpair](https://github.com/Tiziano-AI/grokpair) | Delegate a bounded task to Grok Build while you keep working, then review its replies and files. | Grok Build CLI and your own authentication. |
+| [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Give local HTTP(S) or pinned SSH services stable, protected hostnames. | Mac, separate CLI, cloudflared, and your own Cloudflare account and DNS zone. |
+| [T3 Workers](https://github.com/Tiziano-AI/t3-workers) · alpha | Delegate tasks to visible workers in your T3 environment. | Running T3, configured providers and a native MCP connection. |
 
-Only explicitly listed plugins are distributed here. A project's existence in
-the Tiziano AI organization does not make it part of this catalog.
+All six support both hosts. Each repository explains setup, first use and
+its limits. Installing a plugin does not install a separate application,
+CLI or model, start work, publish anything, or grant provider access.
 
 ## Install
+
+The example below installs Charter Skills. To choose another plugin, replace
+`charter-skills` with `deck-studio`, `voices`, `grokpair`,
+`cloudflare-publish` or `t3-workers`.
 
 ### Codex
 
 ```sh
 codex plugin marketplace add Tiziano-AI/plugins
-codex plugin add t3-workers@tiziano-ai
+codex plugin add charter-skills@tiziano-ai
 ```
 
-Use the CLI belonging to your intended installation; a desktop app's bundled
-runtime can differ from `codex` on your PATH. You can also select the plugin
-in the supported desktop plugin directory after adding the marketplace.
-Start a fresh local chat and verify that the plugin's skill is available.
+Use the CLI for your intended Codex installation; the desktop app's bundled
+runtime can differ from `codex` on your PATH. In supported desktop clients,
+you can also choose the plugin from the Plugins Directory after adding the
+marketplace. Start a fresh local chat and check that its skills are available.
 
 ### Claude Code
 
 ```sh
 claude plugin marketplace add Tiziano-AI/plugins
-claude plugin install t3-workers@tiziano-ai --scope user
+claude plugin install charter-skills@tiziano-ai --scope user
 ```
 
-Run `/reload-plugins` where supported, or start a new session. T3 Workers can
-then be invoked explicitly as `/t3-workers:t3-workers`.
+Run `/reload-plugins` where supported, or start a new session.
 
-Adding this marketplace does not install every plugin. Installing T3 Workers
-does not install T3, configure providers or approve MCP OAuth. Follow the
-[plugin's setup guide](https://github.com/Tiziano-AI/t3-workers#connect-your-t3-environment)
-and reuse an existing native connection when available.
+### Try Charter Skills
 
-For Cloudflare Publish, use `cloudflare-publish@tiziano-ai` in the install
-command instead. Follow its [setup guide](https://github.com/Tiziano-AI/cloudflare-publish#install-the-cli-and-plugin)
-for the separate macOS CLI and Cloudflare prerequisites. Installing its
-guidance creates no tunnel, credentials, DNS, Access policy or background job;
-removing it does not stop existing publications.
+If you have an idea but are not sure how to turn it into useful work, invoke
+Work Discovery and describe what you want to achieve:
 
-For another plugin, substitute its catalog name in the same command:
-`charter-skills@tiziano-ai`, `grokpair@tiziano-ai`, `voices@tiziano-ai` or
-`deck-studio@tiziano-ai`. Follow the selected repository's setup guide for
-its prerequisites and first use. Catalog installation does not install a
-separate application, CLI, model or service, or grant provider access.
+- Codex: `$charter-skills:charter-work-discovery`
+- Claude Code: `/charter-skills:charter-work-discovery`
 
-## Update or remove
+For a clear task, ask for the work directly. The library supplies specialist
+methods when they fit; it does not replace your standing instructions.
 
-Refresh the catalog and update the selected plugin through the native client:
+## Update
+
+Refresh the marketplace, then update the plugin you selected. Substitute its
+catalog name below if you installed something other than Charter Skills.
+
+Codex:
 
 ```sh
-# Codex
 codex plugin marketplace upgrade tiziano-ai
-codex plugin add t3-workers@tiziano-ai
+codex plugin add charter-skills@tiziano-ai
+```
 
-# Claude Code
+Claude Code:
+
+```sh
 claude plugin marketplace update tiziano-ai
-claude plugin update t3-workers@tiziano-ai --scope user
+claude plugin update charter-skills@tiziano-ai --scope user
 ```
 
 Reload the supported host or start a new session, then check the selected
-version. Remove only the plugin when that is what you intend:
+version.
+
+## Remove
+
+Remove the selected plugin, not the shared marketplace:
 
 ```sh
-codex plugin remove t3-workers@tiziano-ai
-# OR
-claude plugin uninstall t3-workers@tiziano-ai --scope user
+codex plugin remove charter-skills@tiziano-ai
 ```
 
-Removing a whole marketplace is a different action and can affect its installed
-plugins. Plugin removal does not automatically stop work, delete user data or
-revoke separately configured connections; each plugin's guide owns that boundary.
+Or, in Claude Code:
 
-## Catalog maintenance
+```sh
+claude plugin uninstall charter-skills@tiziano-ai --scope user
+```
 
-The two small native manifests reference plugin repositories directly:
+Removing a marketplace is a separate action and can affect its installed
+plugins. Removing a plugin does not stop existing work, delete user data or
+revoke connections managed outside it. Follow that product's removal guide
+for those effects.
 
-- `.agents/plugins/marketplace.json` uses Codex Git URL and Git-subdirectory sources.
-- `.claude-plugin/marketplace.json` uses Claude GitHub and Git-subdirectory sources.
+## Maintaining this catalog
 
-There are no copied plugins, build step, daemon or bundled credentials. Add an
-entry only for supported hosts and keep version details with the plugin.
-Pinned entries select the same reviewed source commit in both hosts;
-promoting a replacement changes that pin explicitly. Charter Skills and
-Grokpair select their plugin subdirectories through native `git-subdir`
-sources. The other entries select repository roots. The catalog copies
-neither implementation nor skill content.
+This repository contains two native manifests, not copies of the plugins:
+
+- `.agents/plugins/marketplace.json` for Codex.
+- `.claude-plugin/marketplace.json` for Claude Code.
+
+Each plugin owns its source, version and release lifecycle. Both catalogs
+select the same source commit and plugin directory for each pinned release.
+Charter Skills and Grokpair use native `git-subdir` sources; the other
+plugins live at their repository roots. Projects outside this list are not
+distributed through this marketplace.
+
+Validate catalog changes offline:
 
 ```sh
 python3 -m unittest discover -s tests -v
 claude plugin validate --strict .
 ```
 
-These checks validate the catalog, not remote plugin installation or behavior.
-Before publishing a source change, exercise native installation in an isolated
-home without inference, OAuth or live user configuration changes.
+These checks validate catalog structure, not installation or product behavior.
+Qualify packaging changes with native installation in an isolated home,
+without inference, OAuth or changes to live user configuration.
 
-Native contracts: [OpenAI marketplace metadata](https://developers.openai.com/plugins/build/plugins#marketplace-metadata)
+Native references: [Codex marketplace metadata](https://developers.openai.com/plugins/build/plugins#marketplace-metadata)
 and [Claude marketplace sources](https://code.claude.com/docs/en/plugin-marketplaces#choose-a-plugin-source).
 
-MIT licensed. Individual plugins keep their own licenses and support boundaries.
+MIT licensed. Individual plugins retain their own licenses and support boundaries.
