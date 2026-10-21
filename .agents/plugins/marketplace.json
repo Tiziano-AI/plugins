@@ -44,7 +44,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/deck-studio.git",
-        "sha": "db073d337a7e9cefe2e2073cff3bd77b65e46384"
+        "sha": "0837b4a24faf68f515ddb1dfdf9a9146bace7665"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -63,7 +63,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/voices.git",
-        "sha": "49f5760d58d108c0f2c69e5e2c8c35fce71a0871"
+        "sha": "aa3e5a6a5f07285a79c5e3ff200103439e8ae5a2"
       },
       "policy": {
         "installation": "AVAILABLE",
