@@ -50,6 +50,15 @@
       "description": "Create reusable voices, audition speech and export the performance you selected on your Apple Silicon Mac. Requires your own local Voices CLI and models."
     },
     {
+      "name": "walkthrough",
+      "source": {
+        "source": "github",
+        "repo": "Tiziano-AI/walkthrough",
+        "sha": "14016c7cc31ed68a42564ba8111cf6faba591321"
+      },
+      "description": "Create narrated films from real web-product use and revise retained footage. Requires an Apple Silicon Mac, the separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator. Setup explicitly acquires dependencies and a browser; installing this guidance starts no recording or inference. Remotion and model terms apply separately."
+    },
+    {
       "name": "grokpair",
       "source": {
         "source": "git-subdir",

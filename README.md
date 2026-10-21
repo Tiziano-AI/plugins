@@ -12,19 +12,20 @@ Specialist skills and tools for **Codex and Claude Code**. Add the
 | [Charter Skills](https://github.com/Tiziano-AI/charter-skills) | Apply specialist methods to product decisions, design, engineering, research and creative work. | Mac-first skill library; tools depend on the task. |
 | [Deck Studio](https://github.com/Tiziano-AI/deck-studio) | Shape a story and build local HTML decks and screenshot PDFs. | Local Node.js, npm, Python and package-local Chromium setup. |
 | [Voices](https://github.com/Tiziano-AI/voices) | Create reusable voices, audition speech and export the performance you selected. | Apple Silicon Mac, separate Voices CLI and local models. |
+| [Walkthrough](https://github.com/Tiziano-AI/walkthrough) | Create a narrated film from real web-product use, then revise retained footage. | Apple Silicon Mac, separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator; applicable Remotion and model terms. |
 | [Grokpair](https://github.com/Tiziano-AI/grokpair) | Delegate a bounded task to Grok Build while you keep working, then review its replies and files. | Grok Build CLI and your own authentication. |
 | [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Give local HTTP(S) or pinned SSH services stable, protected hostnames. | Mac, separate CLI, cloudflared, and your own Cloudflare account and DNS zone. |
 | [T3 Workers](https://github.com/Tiziano-AI/t3-workers) · alpha | Delegate tasks to visible workers in your T3 environment. | Running T3, configured providers and a native MCP connection. |
 
-All six support both hosts. Each repository explains setup, first use and
+All seven support both hosts. Each repository explains setup, first use and
 its limits. Installing a plugin does not install a separate application,
 CLI or model, start work, publish anything, or grant provider access.
 
 ## Install
 
 The example below installs Charter Skills. To choose another plugin, replace
-`charter-skills` with `deck-studio`, `voices`, `grokpair`,
-`cloudflare-publish` or `t3-workers`.
+`charter-skills` with `deck-studio`, `voices`, `walkthrough`,
+`grokpair`, `cloudflare-publish` or `t3-workers`.
 
 ### Codex
 

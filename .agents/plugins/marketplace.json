@@ -72,6 +72,26 @@
       "category": "Productivity"
     },
     {
+      "name": "walkthrough",
+      "interface": {
+        "displayName": "Walkthrough",
+        "shortDescription": "Make films from real web-product use",
+        "longDescription": "Create a narrated local walkthrough and revise retained footage. Requires an Apple Silicon Mac, the separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator. Setup explicitly acquires runtime dependencies and a browser; plugin installation starts no recording or inference. Remotion and model terms apply separately.",
+        "developerName": "Tiziano AI",
+        "websiteUrl": "https://github.com/Tiziano-AI/walkthrough"
+      },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Tiziano-AI/walkthrough.git",
+        "sha": "14016c7cc31ed68a42564ba8111cf6faba591321"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    },
+    {
       "name": "grokpair",
       "interface": {
         "displayName": "Grokpair",
