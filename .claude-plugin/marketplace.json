@@ -55,7 +55,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/grokpair.git",
         "path": "plugin",
-        "sha": "4d8634b7a39f2d901231699f3795d853f15745f7"
+        "sha": "080ecde0a7d14c171ce90501c4718b09386026c1"
       },
       "description": "Delegate bounded work to a detached Grok Build collaborator while your agent keeps working, then review its replies and files."
     },
