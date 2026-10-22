@@ -26,7 +26,7 @@
     },
     {
       "name": "deck-studio",
-      "description": "Shape a story and build local HTML decks and screenshot PDFs with narrative guidance and 56 visual systems.",
+      "description": "Shape a story and build local HTML/PDF or native editable PowerPoint with narrative guidance and 56 visual systems.",
       "author": {
         "name": "Tiziano AI",
         "url": "https://github.com/Tiziano-AI"
@@ -37,14 +37,14 @@
       "interface": {
         "displayName": "Deck Studio",
         "shortDescription": "Shape and build communication decks",
-        "longDescription": "Turn notes, approved content or an existing deck into HTML and screenshot PDF. Requires a local executor, Node.js, npm, Python and package-local Chromium setup. PDF pages are images, not editable or searchable text. Hosting is optional and uses your own library and gateway.",
+        "longDescription": "Turn notes, approved content or an existing deck into HTML/PDF or native editable PowerPoint. Requires a local executor, Node.js, npm, Python and package-local dependency setup. HTML rendering uses Chromium; PowerPoint render inspection also needs LibreOffice and Poppler. The HTML PDF export contains slide images. Hosting is optional and uses your own library and gateway.",
         "developerName": "Tiziano AI",
         "websiteUrl": "https://github.com/Tiziano-AI/deck-studio"
       },
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/deck-studio.git",
-        "sha": "0837b4a24faf68f515ddb1dfdf9a9146bace7665"
+        "sha": "4e8556d5159e72ece46b4aaa1ddf9181fb82fa4a"
       },
       "policy": {
         "installation": "AVAILABLE",
