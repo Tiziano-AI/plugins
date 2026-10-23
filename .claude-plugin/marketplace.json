@@ -21,9 +21,9 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/deck-studio",
-        "sha": "db01d2c197d7eb79c62518a30975002cb9159077"
+        "sha": "1790d282a5fd7dfecfd325754231deb1a707f72c"
       },
-      "description": "Shape a story and build local HTML/PDF or native editable PowerPoint with narrative guidance and 56 visual systems.",
+      "description": "Shape a story and deliver HTML, PDF and native editable PowerPoint with narrative guidance and 56 visual systems.",
       "author": {
         "name": "Tiziano AI",
         "url": "https://github.com/Tiziano-AI"

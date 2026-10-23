@@ -10,7 +10,7 @@ Specialist skills and tools for **Codex and Claude Code**. Add the
 | Plugin | What you can do | Before you use it |
 | --- | --- | --- |
 | [Charter Skills](https://github.com/Tiziano-AI/charter-skills) | Apply specialist methods to product decisions, design, engineering, research and creative work. | Mac-first skill library; tools depend on the task. |
-| [Deck Studio](https://github.com/Tiziano-AI/deck-studio) | Shape a story and build local HTML/PDF or native editable PowerPoint. | Local Node.js, npm, Python and package-local setup; LibreOffice and Poppler for PowerPoint render inspection. |
+| [Deck Studio](https://github.com/Tiziano-AI/deck-studio) | Shape a story and deliver HTML, PDF and native editable PowerPoint. | Local Node.js, npm, Python and package-local setup; LibreOffice and Poppler for PowerPoint render inspection. |
 | [Voices](https://github.com/Tiziano-AI/voices) | Create reusable voices, audition speech and export the performance you selected. | Apple Silicon Mac, separate Voices CLI and local models. |
 | [Walkthrough](https://github.com/Tiziano-AI/walkthrough) | Create a narrated film from real web-product use, then revise retained footage. | Apple Silicon Mac, separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator; applicable Remotion and model terms. |
 | [Grokpair](https://github.com/Tiziano-AI/grokpair) | Delegate a bounded task to Grok Build while you keep working, then review its replies and files. | Grok Build CLI and your own authentication. |
