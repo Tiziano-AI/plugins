@@ -44,7 +44,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/deck-studio.git",
-        "sha": "1790d282a5fd7dfecfd325754231deb1a707f72c"
+        "sha": "0cb2bcc7afe7931227749975240595f3bce65b31"
       },
       "policy": {
         "installation": "AVAILABLE",
