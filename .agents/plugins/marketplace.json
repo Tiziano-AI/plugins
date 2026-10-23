@@ -44,7 +44,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/deck-studio.git",
-        "sha": "4e8556d5159e72ece46b4aaa1ddf9181fb82fa4a"
+        "sha": "db01d2c197d7eb79c62518a30975002cb9159077"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -63,7 +63,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/voices.git",
-        "sha": "aa3e5a6a5f07285a79c5e3ff200103439e8ae5a2"
+        "sha": "87d8d34cf593ad83fe45b45c88ec89599c15809d"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -103,7 +103,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/grokpair.git",
         "path": "./plugin",
-        "sha": "080ecde0a7d14c171ce90501c4718b09386026c1"
+        "sha": "f091d28173d38bd5c78030c43934538e9d08bea4"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -122,7 +122,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/cloudflare-publish.git",
-        "sha": "bda9c0b9aeed74fe524609038bc415b6ca8817fe"
+        "sha": "5bb7f33bad9dd96566ca060094c89bca09da3560"
       },
       "policy": {
         "installation": "AVAILABLE",

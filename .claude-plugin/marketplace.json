@@ -21,7 +21,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/deck-studio",
-        "sha": "4e8556d5159e72ece46b4aaa1ddf9181fb82fa4a"
+        "sha": "db01d2c197d7eb79c62518a30975002cb9159077"
       },
       "description": "Shape a story and build local HTML/PDF or native editable PowerPoint with narrative guidance and 56 visual systems.",
       "author": {
@@ -47,7 +47,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/voices",
-        "sha": "aa3e5a6a5f07285a79c5e3ff200103439e8ae5a2"
+        "sha": "87d8d34cf593ad83fe45b45c88ec89599c15809d"
       },
       "description": "Create reusable voices, audition speech and export the performance you selected on your Apple Silicon Mac. Requires your own local Voices CLI and models."
     },
@@ -66,7 +66,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/grokpair.git",
         "path": "plugin",
-        "sha": "080ecde0a7d14c171ce90501c4718b09386026c1"
+        "sha": "f091d28173d38bd5c78030c43934538e9d08bea4"
       },
       "description": "Delegate bounded work to a detached Grok Build collaborator while your agent keeps working, then review its replies and files."
     },
@@ -75,7 +75,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/cloudflare-publish",
-        "sha": "bda9c0b9aeed74fe524609038bc415b6ca8817fe"
+        "sha": "5bb7f33bad9dd96566ca060094c89bca09da3560"
       },
       "description": "Give local HTTP(S) or pinned SSH services stable, protected hostnames through your own Cloudflare Tunnel and Access."
     },
