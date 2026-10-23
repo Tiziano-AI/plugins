@@ -47,16 +47,22 @@ class CatalogTests(unittest.TestCase):
                     self.assertTrue(left_path)
                     self.assertFalse(left_path.startswith("/"))
                     self.assertNotIn("..", left_path.split("/"))
-                    self.assertIn("sha", left)
                 else:
                     self.assertEqual(left["source"], "url")
                     self.assertEqual(right["source"], "github")
                     self.assertEqual(parsed.path.removesuffix(".git").strip("/"), right["repo"])
-                if "sha" in left or "sha" in right:
-                    self.assertEqual(left["sha"], right["sha"])
-                    self.assertRegex(left["sha"], r"\A[0-9a-f]{40}\Z")
-                    self.assertNotIn("ref", left)
-                    self.assertNotIn("ref", right)
+                self.assertEqual(left["sha"], right["sha"])
+
+    def test_remote_git_sources_pin_full_immutable_commits(self):
+        for host, catalog in (("Codex", self.codex), ("Claude", self.claude)):
+            for entry in catalog["plugins"]:
+                source = entry["source"]
+                if source["source"] not in ("url", "github", "git-subdir"):
+                    continue
+                with self.subTest(host=host, plugin=entry["name"]):
+                    self.assertIn("sha", source)
+                    self.assertRegex(source["sha"], r"\A[0-9a-f]{40}\Z")
+                    self.assertNotIn("ref", source)
 
     def test_codex_entries_have_explicit_install_policy(self):
         for entry in self.codex["plugins"]:
