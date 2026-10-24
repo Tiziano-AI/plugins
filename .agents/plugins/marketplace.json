@@ -83,7 +83,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/walkthrough.git",
-        "sha": "14016c7cc31ed68a42564ba8111cf6faba591321"
+        "sha": "a7ca70b3fb9792c6cfb29cbe9deb7f7e8f0c39d2"
       },
       "policy": {
         "installation": "AVAILABLE",
