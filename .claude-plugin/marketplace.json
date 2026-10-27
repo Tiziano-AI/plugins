@@ -21,7 +21,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/deck-studio",
-        "sha": "eb4a66179b0edb8ac74c880e57fa43c552832882"
+        "sha": "d8d5821bfa75a2937361571c45c6103120e9259b"
       },
       "description": "Shape a story and deliver HTML, PDF and native editable PowerPoint with narrative guidance and 56 visual systems.",
       "author": {
@@ -47,7 +47,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/voices",
-        "sha": "87d8d34cf593ad83fe45b45c88ec89599c15809d"
+        "sha": "6fc13b7d5a09c311ec1650b7e460b9d26fd4ee83"
       },
       "description": "Create reusable voices, audition speech and export the performance you selected on your Apple Silicon Mac. Requires your own local Voices CLI and models."
     },
@@ -56,7 +56,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/walkthrough",
-        "sha": "a7ca70b3fb9792c6cfb29cbe9deb7f7e8f0c39d2"
+        "sha": "509995dac2674a289710f39be01071fa9d27976f"
       },
       "description": "Create narrated films from real web-product use and revise retained footage. Requires an Apple Silicon Mac, the separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator. Setup explicitly acquires dependencies and a browser; installing this guidance starts no recording or inference. Remotion and model terms apply separately."
     },
@@ -66,7 +66,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/grokpair.git",
         "path": "plugin",
-        "sha": "f091d28173d38bd5c78030c43934538e9d08bea4"
+        "sha": "2e60b90ce240e5d1e06c4a78f5598e8767e1843b"
       },
       "description": "Delegate bounded work to a detached Grok Build collaborator while your agent keeps working, then review its replies and files."
     },
@@ -75,7 +75,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/cloudflare-publish",
-        "sha": "5bb7f33bad9dd96566ca060094c89bca09da3560"
+        "sha": "4fe83d92f6a0045081daa903e2e2ea585dc5dbc4"
       },
       "description": "Give local HTTP(S) or pinned SSH services stable, protected hostnames through your own Cloudflare Tunnel and Access."
     },
