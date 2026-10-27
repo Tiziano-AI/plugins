@@ -56,7 +56,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/walkthrough",
-        "sha": "509995dac2674a289710f39be01071fa9d27976f"
+        "sha": "4c1e3ffcc2f7c5c0dcb5f1422701b647780c75b4"
       },
       "description": "Create narrated films from real web-product use and revise retained footage. Requires an Apple Silicon Mac, the separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator. Setup explicitly acquires dependencies and a browser; installing this guidance starts no recording or inference. Remotion and model terms apply separately."
     },
