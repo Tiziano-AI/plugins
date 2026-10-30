@@ -141,7 +141,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/t3-workers.git",
-        "sha": "d473a4616df037b52d1fe79bfa2b62ec4459f5d7"
+        "sha": "b5f1112170b7c14629a1d3635728106c46011f37"
       },
       "policy": {
         "installation": "AVAILABLE",
