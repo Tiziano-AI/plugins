@@ -84,7 +84,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/t3-workers",
-        "sha": "7ee349f7e199e3db53c58d10aa312acd2228d6e1"
+        "sha": "fc0fb068243bdf4afabf1298d27714d8efb7290b"
       },
       "description": "Delegate tasks to visible T3 workers from Codex or Claude Code. Alpha."
     }
