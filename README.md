@@ -14,7 +14,7 @@ Specialist skills and tools for **Codex and Claude Code**. Add the
 | [Voices](https://github.com/Tiziano-AI/voices) | Create reusable voices, audition speech and export the performance you selected. | Apple Silicon Mac, separate Voices CLI and local models. |
 | [Walkthrough](https://github.com/Tiziano-AI/walkthrough) | Create a narrated film from real web-product use, then revise retained footage. | Apple Silicon Mac, separate Walkthrough CLI, Node 24, FFmpeg and local Voices with provisioned models and a saved narrator; applicable Remotion and model terms. |
 | [Grokpair](https://github.com/Tiziano-AI/grokpair) | Delegate a bounded task to Grok Build while you keep working, then review its replies and files. | Grok Build CLI and your own authentication. |
-| [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Give local HTTP(S) or pinned SSH services stable, protected hostnames. | Mac, separate CLI, cloudflared, and your own Cloudflare account and DNS zone. |
+| [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Give local HTTP(S) or pinned SSH services stable, protected hostnames. | macOS or Linux, separate uv-installed CLI, cloudflared, and your own Cloudflare account and DNS zone. |
 | [T3 Workers](https://github.com/Tiziano-AI/t3-workers) · alpha | Delegate tasks to visible workers in your T3 environment. | Running T3, configured providers and a native MCP connection. |
 
 All seven support both hosts. Each repository explains setup, first use and
@@ -109,9 +109,9 @@ This repository contains two native manifests, not copies of the plugins:
 
 Each plugin owns its source, version and release lifecycle. Both catalogs
 select the same source commit and plugin directory for each pinned release.
-Charter Skills and Grokpair use native `git-subdir` sources; the other
-plugins live at their repository roots. Projects outside this list are not
-distributed through this marketplace.
+Charter Skills, Grokpair and Cloudflare Publish use native `git-subdir`
+sources; the other plugins live at their repository roots. Projects outside
+this list are not distributed through this marketplace.
 
 Validate catalog changes offline:
 

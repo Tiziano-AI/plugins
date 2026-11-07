@@ -72,17 +72,23 @@ class CatalogTests(unittest.TestCase):
                 self.assertIn(entry["policy"]["authentication"], ("ON_INSTALL", "ON_USE"))
                 self.assertTrue(entry["category"])
 
-    def test_cloudflare_publish_pins_one_canonical_public_source_commit(self):
+    def test_cloudflare_publish_pins_its_plugin_directory_at_one_commit(self):
         codex = {entry["name"]: entry for entry in self.codex["plugins"]}
         claude = {entry["name"]: entry for entry in self.claude["plugins"]}
-        left = codex["cloudflare-publish"]
-        right = claude["cloudflare-publish"]
-        self.assertEqual(right["source"]["repo"], "Tiziano-AI/cloudflare-publish")
-        self.assertEqual(left["source"]["sha"], right["source"]["sha"])
-        self.assertRegex(left["source"]["sha"], r"\A[0-9a-f]{40}\Z")
-        self.assertNotIn("ref", left["source"])
-        self.assertNotIn("ref", right["source"])
-        self.assertEqual(left["policy"]["authentication"], "ON_USE")
+        left = codex["cloudflare-publish"]["source"]
+        right = claude["cloudflare-publish"]["source"]
+        url = "https://github.com/Tiziano-AI/cloudflare-publish.git"
+        self.assertEqual(left["source"], "git-subdir")
+        self.assertEqual(right["source"], "git-subdir")
+        self.assertEqual(left["url"], url)
+        self.assertEqual(right["url"], url)
+        self.assertEqual(left["path"], "./plugin")
+        self.assertEqual(right["path"], "plugin")
+        self.assertEqual(left["sha"], right["sha"])
+        self.assertRegex(left["sha"], r"\A[0-9a-f]{40}\Z")
+        self.assertNotIn("ref", left)
+        self.assertNotIn("ref", right)
+        self.assertEqual(codex["cloudflare-publish"]["policy"]["authentication"], "ON_USE")
 
     def test_codex_remote_entries_provide_native_preview_metadata(self):
         for entry in self.codex["plugins"]:

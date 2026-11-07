@@ -73,9 +73,10 @@
     {
       "name": "cloudflare-publish",
       "source": {
-        "source": "github",
-        "repo": "Tiziano-AI/cloudflare-publish",
-        "sha": "4fe83d92f6a0045081daa903e2e2ea585dc5dbc4"
+        "source": "git-subdir",
+        "url": "https://github.com/Tiziano-AI/cloudflare-publish.git",
+        "path": "plugin",
+        "sha": "8542b7e96256af3431e3783bf5dae69fbbe62673"
       },
       "description": "Give local HTTP(S) or pinned SSH services stable, protected hostnames through your own Cloudflare Tunnel and Access."
     },

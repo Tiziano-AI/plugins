@@ -120,9 +120,10 @@
         "websiteUrl": "https://github.com/Tiziano-AI/cloudflare-publish"
       },
       "source": {
-        "source": "url",
+        "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/cloudflare-publish.git",
-        "sha": "4fe83d92f6a0045081daa903e2e2ea585dc5dbc4"
+        "path": "./plugin",
+        "sha": "8542b7e96256af3431e3783bf5dae69fbbe62673"
       },
       "policy": {
         "installation": "AVAILABLE",
