@@ -46,7 +46,8 @@ class CatalogTests(unittest.TestCase):
                     self.assertEqual(left_path, right_path)
                     self.assertTrue(left_path)
                     self.assertFalse(left_path.startswith("/"))
-                    self.assertNotIn("..", left_path.split("/"))
+                    for segment in left_path.split("/"):
+                        self.assertNotIn(segment, ("", ".", ".."))
                 else:
                     self.assertEqual(left["source"], "url")
                     self.assertEqual(right["source"], "github")
