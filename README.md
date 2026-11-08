@@ -16,8 +16,9 @@ Specialist skills and tools for **Codex and Claude Code**. Add the
 | [Grokpair](https://github.com/Tiziano-AI/grokpair) | Delegate a bounded task to Grok Build while you keep working, then review its replies and files. | Grok Build CLI and your own authentication. |
 | [Cloudflare Publish](https://github.com/Tiziano-AI/cloudflare-publish) | Give local HTTP(S) or pinned SSH services stable, protected hostnames. | macOS or Linux, separate uv-installed CLI, cloudflared, and your own Cloudflare account and DNS zone. |
 | [T3 Workers](https://github.com/Tiziano-AI/t3-workers) · alpha | Delegate tasks to visible workers in your T3 environment. | Running T3, configured providers and a native MCP connection. |
+| [T3 Workflow Relay](https://github.com/Tiziano-AI/t3-workers#mix-t3-workers-into-a-claude-code-workflow) · alpha · Claude Code only | Run any agent of a Claude Code workflow on another T3 account or provider, in its own T3 thread. | A Claude Code chief that runs inside a T3 thread; install it in that T3 home. |
 
-All seven support both hosts. Each repository explains setup, first use and
+All but T3 Workflow Relay support both hosts; it is for Claude Code only. Each repository explains setup, first use and
 its limits. Installing a plugin does not install a separate application,
 CLI or model, start work, publish anything, or grant provider access.
 
@@ -25,7 +26,8 @@ CLI or model, start work, publish anything, or grant provider access.
 
 The example below installs Charter Skills. To choose another plugin, replace
 `charter-skills` with `deck-studio`, `voices`, `walkthrough`,
-`grokpair`, `cloudflare-publish` or `t3-workers`.
+`grokpair`, `cloudflare-publish`, `t3-workers` or, for Claude Code only,
+`t3-workflow-relay`.
 
 ### Codex
 
@@ -107,10 +109,11 @@ This repository contains two native manifests, not copies of the plugins:
 - `.agents/plugins/marketplace.json` for Codex.
 - `.claude-plugin/marketplace.json` for Claude Code.
 
-Each plugin owns its source, version and release lifecycle. Both catalogs
-select the same source commit and plugin directory for each pinned release.
-Charter Skills, Grokpair and Cloudflare Publish use native `git-subdir`
-sources; the other plugins live at their repository roots. Projects outside
+Each plugin owns its source, version and release lifecycle. Where both
+catalogs list a plugin, they select the same source commit and plugin directory.
+Charter Skills, Grokpair, Cloudflare Publish and T3 Workflow Relay use native
+`git-subdir` sources; the other plugins live at their repository roots. T3
+Workflow Relay is listed only in the Claude Code catalog. Projects outside
 this list are not distributed through this marketplace.
 
 Validate catalog changes offline:
