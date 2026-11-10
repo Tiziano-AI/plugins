@@ -63,7 +63,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/Tiziano-AI/voices.git",
-        "sha": "6fc13b7d5a09c311ec1650b7e460b9d26fd4ee83"
+        "sha": "b502e18f62482cc8bfc69e01d2e79bee61770e69"
       },
       "policy": {
         "installation": "AVAILABLE",

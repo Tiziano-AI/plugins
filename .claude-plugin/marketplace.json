@@ -47,7 +47,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/voices",
-        "sha": "6fc13b7d5a09c311ec1650b7e460b9d26fd4ee83"
+        "sha": "b502e18f62482cc8bfc69e01d2e79bee61770e69"
       },
       "description": "Create reusable voices, audition speech and export the performance you selected on your Apple Silicon Mac. Requires your own local Voices CLI and models."
     },
