@@ -73,6 +73,10 @@ codex plugin marketplace upgrade tiziano-ai
 codex plugin add charter-skills@tiziano-ai
 ```
 
+`marketplace upgrade` can also reinstall every enabled plugin from this
+marketplace, not just refresh its catalog. Run it only when all those plugins
+may move to the published pins.
+
 Claude Code:
 
 ```sh
@@ -111,6 +115,8 @@ This repository contains two native manifests, not copies of the plugins:
 
 Each plugin owns its source, version and release lifecycle. Where both
 catalogs list a plugin, they select the same source commit and plugin directory.
+The shared [release convention](AGENTS.md#release-convention) ties each
+version to an immutable `v<version>` tag, its commit pin and installed payload.
 Charter Skills, Grokpair, Cloudflare Publish and T3 Workflow Relay use native
 `git-subdir` sources; the other plugins live at their repository roots. T3
 Workflow Relay is listed only in the Claude Code catalog. Projects outside
