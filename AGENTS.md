@@ -43,8 +43,12 @@ GitHub Release pages are optional, not another release authority.
 
 Prepare and qualify the product at an exact commit through its own release
 gate. Publish that commit and tag with the required authority, then publish
-the catalog pin. Finally update each intended installation through its owner's
-native route and check its selected version and source commit against the pin.
+the catalog pin only after qualifying compatibility with its supported consumers
+and completing any required runtime prerequisites through their owners. Native
+clients can refresh as soon as a pin is public; a coordinated installation hold
+does not prevent that selection. Finally reconcile each intended installation
+through its owner's native route and check its selected version and source
+commit against the pin.
 A separate CLI or application follows its product's install route too; installing
 the plugin does not update it. Release readiness, catalog availability, installed
 files and loading in an already-open session are separate claims.
