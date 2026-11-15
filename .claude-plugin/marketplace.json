@@ -11,7 +11,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/charter-skills.git",
         "path": "plugins/charter-skills",
-        "sha": "8dbf713a17991d1ce1a18d0a560b12b7cf782f99"
+        "sha": "c6d82ac5fb8e177037916093650dec1b31cb5ddd"
       },
       "description": "Specialist methods for product, design, engineering, research and creative work. An opinionated, Mac-first skill library."
     },
