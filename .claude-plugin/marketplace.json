@@ -85,7 +85,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/t3-workers",
-        "sha": "6c86b7c2fdcc5b718ef3e7fab69e60f6d3ab69c1"
+        "sha": "e542e8f3ab3ceccd52daad604084b2af7c50f160"
       },
       "description": "Delegate tasks to visible T3 workers from Codex or Claude Code. Alpha."
     },
@@ -95,7 +95,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/t3-workers.git",
         "path": "plugins/t3-workflow-relay",
-        "sha": "6c86b7c2fdcc5b718ef3e7fab69e60f6d3ab69c1"
+        "sha": "e542e8f3ab3ceccd52daad604084b2af7c50f160"
       },
       "description": "Run any agent of a Claude Code workflow on another T3 account or provider, in its own T3 thread. Alpha."
     }
