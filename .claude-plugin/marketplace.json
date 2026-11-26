@@ -11,7 +11,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/charter-skills.git",
         "path": "plugins/charter-skills",
-        "sha": "c567efbb004ba9a825b3761572a4044f0d103143"
+        "sha": "87629f2ad1eb3b5637b21e84457407a610f2c19f"
       },
       "description": "Specialist methods for product, design, engineering, research and creative work. An opinionated, Mac-first skill library."
     },
@@ -85,7 +85,7 @@
       "source": {
         "source": "github",
         "repo": "Tiziano-AI/t3-workers",
-        "sha": "e542e8f3ab3ceccd52daad604084b2af7c50f160"
+        "sha": "17d8d2be939258318bad65f099682fa854f6dd8d"
       },
       "description": "Delegate tasks to visible T3 workers from Codex or Claude Code. Alpha."
     },
@@ -95,7 +95,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/t3-workers.git",
         "path": "plugins/t3-workflow-relay",
-        "sha": "e542e8f3ab3ceccd52daad604084b2af7c50f160"
+        "sha": "17d8d2be939258318bad65f099682fa854f6dd8d"
       },
       "description": "Run any agent of a Claude Code workflow on another T3 account or provider, in its own T3 thread. Alpha."
     }
