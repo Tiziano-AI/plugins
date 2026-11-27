@@ -16,7 +16,7 @@
         "source": "git-subdir",
         "url": "https://github.com/Tiziano-AI/charter-skills.git",
         "path": "./plugins/charter-skills",
-        "sha": "87629f2ad1eb3b5637b21e84457407a610f2c19f"
+        "sha": "3aae40e1ef6bb6717aa3831f8fd6a61e41b4ee65"
       },
       "policy": {
         "installation": "AVAILABLE",
